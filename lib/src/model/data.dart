@@ -1,0 +1,173 @@
+import 'category.dart';
+import 'product.dart';
+
+class AppData {
+  static List<Category> categories = [
+    Category(
+      id: '1',
+      name: 'Dresses',
+      icon: '👗',
+    ),
+    Category(
+      id: '2',
+      name: 'Tops',
+      icon: '👚',
+    ),
+    Category(
+      id: '3',
+      name: 'Bottoms',
+      icon: '👖',
+    ),
+    Category(
+      id: '4',
+      name: 'Shoes',
+      icon: '👠',
+    ),
+    Category(
+      id: '5',
+      name: 'Bags',
+      icon: '👜',
+    ),
+    Category(
+      id: '6',
+      name: 'Accessories',
+      icon: '💍',
+    ),
+  ];
+
+  static List<Product> products = [
+    Product(
+      id: '1',
+      name: 'Elegant Floral Dress',
+      description: 'Beautiful floral print dress perfect for summer occasions. Made with premium cotton blend fabric.',
+      price: 89.99,
+      originalPrice: 129.99,
+      images: [
+        'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=800',
+        'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=800',
+      ],
+      category: 'Dresses',
+      sizes: ['XS', 'S', 'M', 'L', 'XL'],
+      colors: ['Pink', 'Blue', 'White'],
+      rating: 4.5,
+      reviewCount: 128,
+      isNew: true,
+    ),
+    Product(
+      id: '2',
+      name: 'Classic White Blouse',
+      description: 'Timeless white blouse that pairs perfectly with any outfit. Professional yet elegant.',
+      price: 49.99,
+      images: [
+        'https://images.unsplash.com/photo-1594633313593-bab3825d0caf?w=800',
+        'https://images.unsplash.com/photo-1594633313593-bab3825d0caf?w=800',
+      ],
+      category: 'Tops',
+      sizes: ['XS', 'S', 'M', 'L'],
+      colors: ['White', 'Beige'],
+      rating: 4.7,
+      reviewCount: 95,
+      isNew: false,
+    ),
+    Product(
+      id: '3',
+      name: 'High-Waisted Jeans',
+      description: 'Comfortable and stylish high-waisted jeans with perfect fit. Stretchy denim for all-day comfort.',
+      price: 79.99,
+      originalPrice: 99.99,
+      images: [
+        'https://images.unsplash.com/photo-1542272604-787c3835535d?w=800',
+        'https://images.unsplash.com/photo-1542272604-787c3835535d?w=800',
+      ],
+      category: 'Bottoms',
+      sizes: ['24', '26', '28', '30', '32'],
+      colors: ['Blue', 'Black'],
+      rating: 4.6,
+      reviewCount: 203,
+      isNew: false,
+    ),
+    Product(
+      id: '4',
+      name: 'Designer Heels',
+      description: 'Elegant high heels perfect for special occasions. Comfortable padding and premium leather.',
+      price: 129.99,
+      originalPrice: 179.99,
+      images: [
+        'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=800',
+        'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=800',
+      ],
+      category: 'Shoes',
+      sizes: ['36', '37', '38', '39', '40'],
+      colors: ['Black', 'Nude', 'Pink'],
+      rating: 4.8,
+      reviewCount: 156,
+      isNew: true,
+    ),
+    Product(
+      id: '5',
+      name: 'Luxury Handbag',
+      description: 'Premium leather handbag with elegant design. Spacious interior with multiple compartments.',
+      price: 199.99,
+      originalPrice: 249.99,
+      images: [
+        'https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=800',
+        'https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=800',
+      ],
+      category: 'Bags',
+      sizes: ['One Size'],
+      colors: ['Black', 'Brown', 'Pink'],
+      rating: 4.9,
+      reviewCount: 87,
+      isNew: true,
+    ),
+    Product(
+      id: '6',
+      name: 'Pearl Necklace Set',
+      description: 'Elegant pearl necklace and earrings set. Perfect for adding sophistication to any outfit.',
+      price: 59.99,
+      images: [
+        'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800',
+        'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800',
+      ],
+      category: 'Accessories',
+      sizes: ['One Size'],
+      colors: ['White', 'Pink'],
+      rating: 4.4,
+      reviewCount: 112,
+      isNew: false,
+    ),
+    Product(
+      id: '7',
+      name: 'Summer Maxi Dress',
+      description: 'Flowing maxi dress perfect for warm weather. Lightweight fabric with beautiful patterns.',
+      price: 69.99,
+      images: [
+        'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=800',
+        'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=800',
+      ],
+      category: 'Dresses',
+      sizes: ['XS', 'S', 'M', 'L', 'XL'],
+      colors: ['Yellow', 'Green', 'Pink'],
+      rating: 4.6,
+      reviewCount: 94,
+      isNew: true,
+    ),
+    Product(
+      id: '8',
+      name: 'Silk Scarf',
+      description: 'Luxurious silk scarf with elegant patterns. Versatile accessory for any season.',
+      price: 39.99,
+      images: [
+        'https://images.unsplash.com/photo-1583292650898-7d22cd27ca6f?w=800',
+        'https://images.unsplash.com/photo-1583292650898-7d22cd27ca6f?w=800',
+      ],
+      category: 'Accessories',
+      sizes: ['One Size'],
+      colors: ['Multicolor', 'Blue', 'Pink'],
+      rating: 4.5,
+      reviewCount: 67,
+      isNew: false,
+    ),
+  ];
+}
+
